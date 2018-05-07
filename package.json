@@ -3,7 +3,13 @@
   "version": "1.0.0",
   "description": "The default blueprint for ember-cli addons.",
   "keywords": [
-    "ember-addon"
+    "ember-tooltip",
+    "ember-simple-tooltip",
+    "simple-ember-tooltip",
+    "ember-hint",
+    "ember-popup",
+    "ember",
+    "tooltip"
   ],
   "license": "MIT",
   "author": "",
