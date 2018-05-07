@@ -1,0 +1,1 @@
+export { default } from 'ember-simple-tooltip/components/simple-tooltip';

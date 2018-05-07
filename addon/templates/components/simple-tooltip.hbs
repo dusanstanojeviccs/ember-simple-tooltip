@@ -1,0 +1,17 @@
+<span class="simple-tooltip">
+	{{yield}}{{baseText}}
+	
+	{{#if hasContent}}
+		<span class="simple-tooltip-container">
+			<div class="simple-tooltip-content">
+				{{#if text}}
+					{{text}}
+				{{/if}}
+
+				{{#if tooltipComponent}}
+					{{component tooltipComponent}}
+				{{/if}}
+			</div>
+		</span>
+	{{/if}}
+</span>

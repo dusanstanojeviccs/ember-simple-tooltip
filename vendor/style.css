@@ -1,0 +1,28 @@
+.simple-tooltip {
+	position: relative;
+	display: inline-block;
+	cursor: pointer;
+}
+
+.simple-tooltip .simple-tooltip-container {
+	visibility: hidden;
+	text-align: center;
+	position: absolute;
+	z-index: 16777271;
+	left: 0px;
+	right: 0px;
+	top: 100%;
+}
+
+.simple-tooltip-content {
+	background-color: black;
+	color: #fff;
+	position: relative;
+	border-radius: 6px;
+	padding: 5px 10px;
+	display: inline-block;
+}
+
+.simple-tooltip:hover .simple-tooltip-container, .simple-tooltip:active .simple-tooltip-container {
+	visibility: visible;
+}

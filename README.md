@@ -1,26 +1,51 @@
-# ember-simple-tooltip
+# Simple Ember Tooltip
 
-This README outlines the details of collaborating on this Ember addon.
+Hi! This ember addon was designed to help you implement the simplest possible tooltip. The whole addon has less than 50 lines of code and it contains only one ember component called ```simple-tooltip```. Tooltips funcionality is achieved with pure CSS.
 
-## Installation
+## Installing
 
-* `git clone <repository-url>` this repository
-* `cd ember-simple-tooltip`
-* `npm install`
+To install this addon in the root of your ember-cli project run:
+```ember-install ember-simple-tooltip```
 
-## Running
 
-* `ember serve`
-* Visit your app at [http://localhost:4200](http://localhost:4200).
+## Simple example
 
-## Running Tests
+The easiest way to use ```simple-tooltip``` is to pass 2 parameters, ```baseText``` and ```text```. Here is an example:
 
-* `npm test` (Runs `ember try:each` to test your addon against multiple Ember versions)
-* `ember test`
-* `ember test --server`
+```{{simple-tooltip baseText="Hover Me!" text="Oh wow!"}}```
 
-## Building
+This code example will render:
+<img src="/example.png" alt="My cool logo"/>
 
-* `ember build`
+## Advanced usage 
 
-For more information on using ember-cli, visit [https://ember-cli.com/](https://ember-cli.com/).
+If you want to have full controll over your ```simple-tooltip``` you can always pass a full template into it:
+
+```
+{{#simple-tooltip text="Oh wow!"}}
+	<div class="red-text">Hover Me!<div>
+{{/simple-tooltip}}
+```
+ If you want to render a custom component within the tooltip popup you can pass in a full component:
+
+```
+{{#simple-tooltip tooltipComponent=(component "yourCustomComponent")}}
+	<div class="red-text">Hover Me!<div>
+{{/simple-tooltip}}
+```
+ 
+
+## Styling the tooltip
+
+The ```simple-tooltip``` component contains only 3 classes:
+*simple-tooltip
+*simple-tooltip-container
+*simple-tooltip-content
+
+
+You can override all it's CSS properties by using those classes.
+
+## Contact
+
+If you have any questions or suggestions feel free to open issues on github or send me an email at dusan.stanojevic.cs@gmail.com.
+
