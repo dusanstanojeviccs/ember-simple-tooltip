@@ -5,7 +5,7 @@ Hi! This ember addon was designed to help you implement the simplest possible to
 ## Installing
 
 To install this addon in the root of your ember-cli project run:
-```ember-install ember-simple-tooltip```
+```npm install ember-simple-tooltip```
 
 
 ## Simple example
