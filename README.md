@@ -15,7 +15,8 @@ The easiest way to use ```simple-tooltip``` is to pass 2 parameters, ```baseText
 ```{{simple-tooltip baseText="Hover Me!" text="Oh wow!"}}```
 
 This code example will render:
-<img src="/example.png" alt="My cool logo"/>
+<br>
+<img src="https://github.com/dusanstanojeviccs/ember-simple-tooltip/raw/master/example.png" alt="example of usage"/>
 
 ## Advanced usage 
 
