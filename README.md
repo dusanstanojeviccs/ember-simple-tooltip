@@ -24,14 +24,14 @@ If you want to have full controll over your ```simple-tooltip``` you can always 
 
 ```
 {{#simple-tooltip text="Oh wow!"}}
-	<div class="red-text">Hover Me!<div>
+	<div class="red-text">Hover Me!</div>
 {{/simple-tooltip}}
 ```
  If you want to render a custom component within the tooltip popup you can pass in a full component:
 
 ```
 {{#simple-tooltip tooltipComponent=(component "yourCustomComponent")}}
-	<div class="red-text">Hover Me!<div>
+	<div class="red-text">Hover Me!</div>
 {{/simple-tooltip}}
 ```
  
